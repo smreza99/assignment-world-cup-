@@ -1,0 +1,229 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    
+   
+}
+
+body{
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
+/**header section start here**/
+.top-section{
+    background-color: black;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 750px;
+    height: 500px;
+   
+    padding: 15px 10px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    display: flex;
+    background-position: relative;
+   
+    
+    
+}
+.left .fa-arrow-right-long{
+    color: black;
+}
+.card .left{
+    width: 100%;
+}
+.card .left h1{
+    font-size:2.5rem;
+}
+
+.card .left p{
+   font-size: 0.8rem;
+}
+.card .right{
+    width:100%
+}
+/**header section ends here**/
+
+/**main section start here**/
+.button-section{
+    margin: 10px;
+    list-style: none;
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    
+   
+   
+}
+.button-section{
+    width: 20%;
+}
+.btn{
+    width: 125px;
+    padding: 2px 7px;
+    margin-right: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+
+
+.cardview, .card1, img{
+    width: 200px;
+    margin-top: 5px;
+}
+.cardview .icon{
+    width: 5px;
+    height: 5px;
+   
+}
+.cardview .fa-solid{
+    padding: 5px;
+    margin: 5px;
+}
+.player-section{
+    width: 80%;
+}
+.main{
+    display: flex;
+    margin-top: 50px;
+    
+}
+.main .button-section{
+    flex-direction: column;
+}
+.cardview{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    
+   
+}
+
+.cardview:hover{
+    cursor: pointer;
+
+}
+.footer{
+    background-color: maroon;
+    color: white;
+}
+.footer h1{
+    text-align: center;
+    margin: 15px;
+
+}
+/**main section ends here**/
+
+
+/**footer section start here**/
+.hr{
+    background-color: gray;
+    border: 1px solid gray;
+    width: 800px;
+    margin-bottom: 30px;
+}
+.footer ul li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    padding: 2px;
+
+}
+
+/**footer section ends here**/
+
+/**media queries for mobile start here**/
+
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    
+    .main, .button-section{
+      width: 100%;
+        flex-direction: column;
+    }
+    .main .player-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer ul li {
+       
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       margin: 10px;
+       padding-right: 210px;
+      
+    }
+    
+   .top-section, .card, .left, .right, .main, .button-section ul li, .player-section, .cardview, .card1, .footer{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+   
+   }
+    
+}
+/**tablet size media queries**/
+@media screen and (min-width: 688px) and (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+    .top-section{
+        width: 100%;
+        display: grid;flex-direction: column;
+    }
+    .main .button-section{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .main, .player-section, .cardview, .card1{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;   
+       
+    }
+    .footer{
+       flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
+}
+
+
+
+/**media queries for tablet ends here**/
+
+
+
+
+
+
+
+
+
+
+
+
+
